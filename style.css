@@ -1,0 +1,28 @@
+body{
+	background-color: grey;
+}
+main svg{
+	margin-left: 25%;
+}
+
+#XMLID_6_ {
+	animation-name:bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bounce{
+	 0%  {transform: translateY(0px);}
+    50%  {transform: translateY(-110px);}
+    75%  {transform: translateY(0px);}
+    100% {transform: translateY(0px);}
+}
+
+#XMLID_136_ {
+	animation-name:bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay:1s;
+}
+ 
