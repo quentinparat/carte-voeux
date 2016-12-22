@@ -14,7 +14,7 @@ main svg{
 
 @keyframes bounce{
 	 0%  {transform: translateY(0px);}
-    50%  {transform: translateY(-110px);}
+    50%  {transform: translateY(-80px);}
     75%  {transform: translateY(0px);}
     100% {transform: translateY(0px);}
 }
@@ -26,3 +26,139 @@ main svg{
     animation-delay:1s;
 }
  
+
+@keyframes pulse{
+	0% { transform: scale(1); }
+
+	50% { transform: scale(1); }
+	
+	75% { transform: scale(1.3); }
+	
+	100% { transform: scale(1); }
+}
+#XMLID_161_ {
+	animation-name: pulse;
+	animation-duration: 3s;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+.rougeG{
+
+	animation-name:toggleRouge;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
+
+.rougeDB{
+
+	animation-name:toggleRouge;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay:1s;
+}
+.rougeDH{
+
+	animation-name:toggleRouge;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-delay:0.2s;
+}
+
+.jauneGH{
+
+	animation-name:toggleJaune;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+.jauneD{
+
+	animation-name:toggleJaune;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    
+}
+.jauneGB{
+
+	animation-name:toggleJaune;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay:0.2s;
+}
+
+
+@keyframes toggleRouge{
+	0% {fill:   #FF0000;}
+	50% {fill:   #8E0C0C;}
+	75% { fill:   #FF0000; }
+	100% {fill:   #FF0000;}
+}
+
+@keyframes toggleJaune{
+	0% { fill: #EFE411; }
+	50% { fill: #A3980F; }
+	75% { fill: #EFE411; }
+	100% { fill: #EFE411; }
+}
+
+
+
+#snow{
+	margin-left: 25%;
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 841.89px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 595.28px;
+
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+
+/*.fusee{
+	animation-name:fusee;
+    animation-duration: 5s;
+
+   
+ 
+}
+
+@keyframes fusee {
+5% { transform: translateY(-5px);  }
+10% { transform: translateY(-9px);  }
+15% { transform: translateY(-15px);  }
+20% { transform: translateY(-24px);  }
+80% {transform: translateY(-900px);}
+
+}*/
